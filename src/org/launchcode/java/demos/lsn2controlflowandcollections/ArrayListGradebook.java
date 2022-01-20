@@ -19,6 +19,7 @@ public class ArrayListGradebook {
             newStudent = input.nextLine();
 
             if (!newStudent.equals("")) {
+                System.out.println("Value entered is: " + newStudent);
                 students.add(newStudent);
             }
 

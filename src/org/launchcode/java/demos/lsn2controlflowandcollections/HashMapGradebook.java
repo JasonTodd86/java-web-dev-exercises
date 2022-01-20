@@ -41,6 +41,8 @@ public class HashMapGradebook {
         }
 
         double avg = sum / students.size();
+        Double samGrade = students.get("Sam");
+        System.out.println(samGrade);
         System.out.println("Average grade: " + avg);
     }
 }

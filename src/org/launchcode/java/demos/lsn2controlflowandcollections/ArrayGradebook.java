@@ -24,6 +24,7 @@ public class ArrayGradebook {
 
             if (!newStudent.equals("")) {
                 students[numStudents] = newStudent;
+                System.out.println(numStudents);
                 numStudents++;
             }
 
