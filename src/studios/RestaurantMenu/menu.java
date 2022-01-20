@@ -2,7 +2,7 @@ package studios.RestaurantMenu;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class menu {
     private ArrayList<menuItems> menuItems = new ArrayList<>();
