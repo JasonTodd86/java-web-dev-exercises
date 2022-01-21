@@ -1,18 +1,23 @@
 package studios.RestaurantMenu;
 
-import java.util.ArrayList;
-
-public class menuItems {
+public class MenuItems {
     private String itemName;
     private double itemPrice;
     private String itemDescription;
     private String itemCategory;
     private boolean isItemNew;
 
+    public MenuItems(String itemName, double itemPrice, String itemDescription, String itemCategory, boolean isItemNew) {
+        this.itemName = itemName;
+        this.itemPrice = itemPrice;
+        this.itemDescription = itemDescription;
+        this.itemCategory = itemCategory;
+        this.isItemNew = isItemNew;
+    }
+
     public String getItemName() {
         return itemName;
     }
-
     public void setItemName(String itemName) {
         this.itemName = itemName;
     }
@@ -20,7 +25,6 @@ public class menuItems {
     public double getItemPrice() {
         return itemPrice;
     }
-
     public void setItemPrice(double itemPrice) {
         this.itemPrice = itemPrice;
     }
@@ -28,7 +32,6 @@ public class menuItems {
     public String getItemDescription() {
         return itemDescription;
     }
-
     public void setItemDescription(String itemDescription) {
         this.itemDescription = itemDescription;
     }
@@ -36,7 +39,6 @@ public class menuItems {
     public String getItemCategory() {
         return itemCategory;
     }
-
     public void setItemCategory(String itemCategory) {
         this.itemCategory = itemCategory;
     }
@@ -44,11 +46,14 @@ public class menuItems {
     public boolean isItemNew() {
         return isItemNew;
     }
-
     public void setItemNew(boolean itemNew) {
         isItemNew = itemNew;
     }
 
+
+    public static void printSingleItem(MenuItems item){
+        System.out.println(item);
+    }
     //    private ArrayList<> category;
 
 //    getters and setters for every constructor

@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.Date;
 //import java.util.Scanner;
 
-public class menu {
-    private ArrayList<menuItems> menuItems = new ArrayList<>();
+public class Menu {
+    private ArrayList<MenuItems> menu = new ArrayList<>();
     private Date lastUpdated;
 
 //constructors for both variables:
-    public menu(ArrayList<studios.RestaurantMenu.menuItems> menuItems) {
-        this.menuItems = menuItems;
+    public Menu(ArrayList<MenuItems> menuItems) {
+        this.menu = menuItems;
     }
 
-    public menu(Date lastUpdated) {
+    public Menu(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
 
     //    getters and setters for every constructor:
-    public ArrayList<studios.RestaurantMenu.menuItems> getMenuItems() {
-        return menuItems;
+    public ArrayList<MenuItems> getMenuItems() {
+        return menu;
     }
 
-    public void setMenuItems(ArrayList<studios.RestaurantMenu.menuItems> menuItems) {
-        this.menuItems = menuItems;
+    public void setMenuItems(ArrayList<MenuItems> menuItems) {
+        this.menu = menuItems;
     }
 
     public Date getLastUpdated() {
@@ -33,4 +33,9 @@ public class menu {
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
+
+
+
+
+
 }
