@@ -1,55 +1,59 @@
 package studios.RestaurantMenu;
 
 public class MenuItems {
-    private String itemName;
-    private double itemPrice;
-    private String itemDescription;
-    private String itemCategory;
-    private boolean isItemNew;
+    private String name;
+    private Double price;
+    private String description;
+    private String category;
+    private Boolean isNew;
 
-    public MenuItems(String itemName, double itemPrice, String itemDescription, String itemCategory, boolean isItemNew) {
-        this.itemName = itemName;
-        this.itemPrice = itemPrice;
-        this.itemDescription = itemDescription;
-        this.itemCategory = itemCategory;
-        this.isItemNew = isItemNew;
-    }
-
-    public String getItemName() {
-        return itemName;
-    }
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+    public MenuItems(String name, Double price, String description, String category, Boolean isNew) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+        this.isNew = isNew;
     }
 
-    public double getItemPrice() {
-        return itemPrice;
-    }
-    public void setItemPrice(double itemPrice) {
-        this.itemPrice = itemPrice;
+    public String getName() {
+        return name;
     }
 
-    public String getItemDescription() {
-        return itemDescription;
-    }
-    public void setItemDescription(String itemDescription) {
-        this.itemDescription = itemDescription;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getItemCategory() {
-        return itemCategory;
-    }
-    public void setItemCategory(String itemCategory) {
-        this.itemCategory = itemCategory;
+    public Double getPrice() {
+        return price;
     }
 
-    public boolean isItemNew() {
-        return isItemNew;
-    }
-    public void setItemNew(boolean itemNew) {
-        isItemNew = itemNew;
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Boolean getNew() {
+        return isNew;
+    }
+
+    public void setNew(Boolean aNew) {
+        isNew = aNew;
+    }
 
     public static void printSingleItem(MenuItems item){
         System.out.println(item);
