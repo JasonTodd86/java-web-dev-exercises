@@ -1,5 +1,6 @@
 package studios.RestaurantMenu;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
 //import java.util.Scanner;
@@ -38,7 +39,30 @@ public class Menu {
         return this.menu;
     }
 
+    public ArrayList<MenuItems> removeItems(MenuItems item){
+        int toBeRemoved = -1;
+        for(int i=0; i < menu.size(); i++){
+            if(menu.get(i).equals(item)){
+                toBeRemoved = i;
+            }
+        }
+        this.menu.add(item);
+        return this.menu;
+    }
 
+    public String menuUpdated(){
+        return ("This menu of ours was last updated on " + this.lastUpdated);
+    }
+
+    public void printItem(MenuItems item){
+        System.out.println((item.getDescription()));
+    }
+
+    public void printMenu(){
+        for(int i=0; i < menu.size(); i++){
+            System.out.println(menu.get(i).getName() + ": " + menu.get(i).getDescription() + ". " + menu.get(i).getPrice());
+        }
+    }
 
 
 
