@@ -53,6 +53,7 @@ public class Student {
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+    @Override
     public String toString() {
         return ("Student: " + name + " ; Student ID: " + studentId + " ; Current GPA: " + gpa + " ; Current Credits: " + numberOfCredits);
     }
@@ -62,13 +63,9 @@ public class Student {
     public boolean equals(Student target) {
         if(target == this){
             return true;
-        }
-
-        if (target == null) {
+        } if (target == null) {
             return false;
-        }
-
-        if (target.getClass() != getClass()) {
+        } if (target.getClass() != getClass()) {
             return false;
         }
 
